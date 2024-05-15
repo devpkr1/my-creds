@@ -1,77 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pradeep Kumar - Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50a8a1;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header h1 {
-            float: left;
-            transform: translateY(50%);
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #cccccc;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Pradeep Kumar</h1>
-            <nav>
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#career">Career Objective</a></li>
-                    <li><a href="#academic">Academic Credentials</a></li>
-                    <!-- Add other sections similarly -->
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>Phone: +91-8077640743</p>
-            <p>Email: <a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a></p>
-        </section>
-        <!-- Add other sections similarly -->
-    </main>
-    <footer>
-        <p>Place: Hapur</p>
-        <p>Name: Pradeep Kumar</p>
-        <p>I hereby declare that the information given above is true to the best of my knowledge.</p>
-    </footer>
-</body>
-</html>
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
