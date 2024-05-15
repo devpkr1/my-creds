@@ -3,30 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <title>Pradeep Kumar - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50a8a1;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header h1 {
+            float: left;
+            transform: translateY(50%);
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pradeep Kumar</h1>
-        <p>Data Analyst</p>
+        <div class="container">
+            <h1>Pradeep Kumar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#career">Career Objective</a></li>
+                    <li><a href="#academic">Academic Credentials</a></li>
+                    <!-- Add other sections similarly -->
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section id="contact">
             <h2>Contact Information</h2>
             <p>Phone: +91-8077640743</p>
             <p>Email: <a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a></p>
-        </section>
-        <section>
-            <h2>Career Objective</h2>
-            <p>Detail-oriented and results-driven Data Analyst Proficient in extracting, cleaning, and analyzing large datasets to uncover insights and drive strategic decision-making. Skilled in using tools such as Advance Excel, SQL, Python, Power Bi and Tableau to transform raw data into actionable business intelligence. Committed to continuous learning and staying abreast of emerging trends and technologies in data analytics. Seeking an opportunity to apply my analytical skills and expertise to solve complex business challenges and make a meaningful impact.</p>
-        </section>
-        <section>
-            <h2>Academic Credentials</h2>
-            <ul>
-                <li>B. Tech (ECE) from Quest group of Institution affiliated to P.T.U. with aggregate of 79% in the year 2016</li>
-                <li>Completed 12th from Saraswati Bal Mandir, Hapur (CBSE) with 61% in 2011</li>
-                <li>Completed 10th from Saraswati Bal Mandir, Hapur with 75% in 2009</li>
-            </ul>
         </section>
         <!-- Add other sections similarly -->
     </main>
