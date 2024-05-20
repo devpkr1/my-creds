@@ -43,6 +43,9 @@ main {
 
 section {
     margin-bottom: 20px;
+    /* Add a stylish border to the sections */
+    border-left: 5px solid #4CAF50;
+    padding-left: 10px;
 }
 
 h2 {
@@ -74,14 +77,21 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Add a stylish border to the sections */
-section {
-    border-left: 5px solid #4CAF50;
-    padding-left: 10px;
-}
-
 /* Add a stylish border to the footer */
 footer {
     border-top: 5px solid #4CAF50;
     padding-top: 10px;
+}
+
+/* Add LinkedIn and Blog icons to header */
+.header-content a img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+/* Add LinkedIn and Blog icons to footer */
+footer a img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
 }
