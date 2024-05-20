@@ -8,44 +8,47 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
             background-color: #f4f4f9;
             color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
         }
-        header {
+        .sidebar {
+            width: 250px;
             background: #9d0505;
             color: white;
             padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
         }
-        .profile-picture {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-        }
-        .profile-picture img {
+        .sidebar img {
             border-radius: 50%;
             width: 100px;
             height: 100px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto 20px;
         }
-        main {
+        .sidebar h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            text-align: center;
+        }
+        .sidebar p {
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            margin-left: 270px;
             padding: 20px;
             max-width: 800px;
-            margin: 20px auto;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
         }
         h2 {
             color: #4CAF50;
@@ -66,20 +69,16 @@
         p, li {
             margin: 5px 0;
         }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
         footer {
             text-align: center;
             padding: 20px;
             background: #9d0505;
             color: white;
             margin-top: 20px;
-            border-top: 8px solid #1512b1;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
         }
         .container {
             max-width: 800px;
@@ -89,22 +88,17 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="profile-picture">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUrCR2w4ZsvYbH9jaunJKPXAttqQK98ROaidxQfII03fCsiEBPfBNq_KFFwiVbMKmo0wpExsPHjuK858q_bdy-ecAPoe2W9vXya2lzl-O3Rky1BqK1L6Ed-QMqDmSmUYKkHs_NYb-cU9VnzbNiL9f7ywk30sF5eXXZkfx5MO84BioMSeg/s220/Screenshot%202024-03-29%20170954.png" alt="Pradeep Kumar's Profile Picture">
-        </div>
+    <div class="sidebar">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUrCR2w4ZsvYbH9jaunJKPXAttqQK98ROaidxQfII03fCsiEBPfBNq_KFFwiVbMKmo0wpExsPHjuK858q_bdy-ecAPoe2W9vXya2lzl-O3Rky1BqK1L6Ed-QMqDmSmUYKkHs_NYb-cU9VnzbNiL9f7ywk30sF5eXXZkfx5MO84BioMSeg/s220/Screenshot%202024-03-29%20170954.png" alt="Pradeep Kumar's Profile Picture">
         <h1>Pradeep Kumar</h1>
         <p>Data Analyst</p>
-    </header>
-    <div class="container">
-        <main>
-            <section id="contact">
-                <h2>Contact Information</h2>
-                <p>Phone: +91-8077640743</p>
-                <p>Email: <a href="mailto:pradeepinfo.30@gmail.com" target="_blank">pradeepinfo.30@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-kumar-1722b6123/" target="_blank">https://www.linkedin.com/in/pradeep-kumar-1722b6123/</a></p>
-            </section>
-            
+        <h2>Contact Information</h2>
+        <p>Phone: +91-8077640743</p>
+        <p>Email: <a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-kumar-1722b6123/">https://www.linkedin.com/in/pradeep-kumar-1722b6123/</a></p>
+    </div>
+    <div class="content">
+        <div class="container">
             <section id="summary">
                 <h2>Summary</h2>
                 <p>Detail-oriented Data Analyst skilled in extracting, cleaning, and analyzing large datasets to drive strategic decisions. Proficient in Advanced Excel, SQL, Python, Power BI, and Tableau. Committed to continuous learning and applying my skills to solve complex business challenges and make a meaningful impact.</p>
@@ -246,7 +240,7 @@
                     <li>Mentoring</li>
                 </ul>
             </section>
-        </main>
+        </div>
     </div>
     <footer>
         <p>Pradeep Kumar - Data Analyst</p>
