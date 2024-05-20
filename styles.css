@@ -27,10 +27,34 @@ header {
     background: #9d0505;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-bottom: 5px solid #333;
+    position: relative;
 }
+
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px; /* Increased font size */
+}
+
+.header-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px; /* Increased font size */
+}
+
+.header-content a img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.footer a img {
+    width: 24px; /* Adjust icon size as needed */
+    height: auto;
+}
+
 
 main {
     padding: 20px;
