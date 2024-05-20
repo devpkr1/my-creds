@@ -12,46 +12,59 @@
             color: #333;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
         }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .sidebar {
-            width: 30%;
+        header {
             background: #9d0505;
             color: white;
             padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
         }
-        .sidebar img {
-            border-radius: 50%;
+        .profile-picture {
             width: 100px;
             height: 100px;
-            display: block;
-            margin: 0 auto 20px;
+            background-color: white;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 20px;
         }
-        .sidebar h1 {
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-content {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .header-content h1, .header-content p {
+            margin: 5px 0;
+        }
+        .header-content h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 24px;
-            text-align: center;
-            margin-bottom: 10px;
         }
-        .sidebar p, .sidebar a {
-            text-align: center;
-            display: block;
-            margin: 5px 0;
+        .header-content p {
+            font-size: 16px;
+        }
+        .header-content a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
-        .content {
-            width: 70%;
+        .header-content a:hover {
+            color: #ddd;
+        }
+        main {
             padding: 20px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            margin: 20px 0;
         }
         h2 {
             color: #4CAF50;
@@ -79,19 +92,29 @@
             color: white;
             margin-top: 20px;
         }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
+    <header>
+        <div class="profile-picture">
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUrCR2w4ZsvYbH9jaunJKPXAttqQK98ROaidxQfII03fCsiEBPfBNq_KFFwiVbMKmo0wpExsPHjuK858q_bdy-ecAPoe2W9vXya2lzl-O3Rky1BqK1L6Ed-QMqDmSmUYKkHs_NYb-cU9VnzbNiL9f7ywk30sF5eXXZkfx5MO84BioMSeg/s220/Screenshot%202024-03-29%20170954.png" alt="Pradeep Kumar's Profile Picture">
+        </div>
+        <div class="header-content">
             <h1>Pradeep Kumar</h1>
             <p>Data Analyst</p>
-            <p>Phone: +91-8077640743</p>
-            <p>Email: <a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-kumar-1722b6123/">linkedin.com/in/pradeep-kumar-1722b6123/</a></p>
+            <p>Phone: +91-8077640743 | Email: <a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a></p>
         </div>
-        <div class="content">
+    </header>
+    <div class="container">
+        <main>
             <section id="summary">
                 <h2>Summary</h2>
                 <p>Detail-oriented Data Analyst skilled in extracting, cleaning, and analyzing large datasets to drive strategic decisions. Proficient in Advanced Excel, SQL, Python, Power BI, and Tableau. Committed to continuous learning and applying my skills to solve complex business challenges and make a meaningful impact.</p>
@@ -113,7 +136,7 @@
             </section>
             
             <section id="academic">
-                <h2>Academic Credentials</h2>
+                <h2>Education</h2>
                 <ul>
                     <li>B. Tech (ECE) from Quest Group of Institutions affiliated with P.T.U. with an aggregate of 79% in the year 2016</li>
                     <li>Completed 12th from Saraswati Bal Mandir, Hapur (CBSE) with 61% in 2011</li>
@@ -193,10 +216,10 @@
             </section>
             
             <section id="languages">
-                <h2>Languages</h2>
+                <h2>Languages Known</h2>
                 <ul>
-                    <li>English (Proficient)</li>
-                    <li>Hindi (Fluent)</li>
+                    <li>English</li>
+                    <li>Hindi</li>
                 </ul>
             </section>
             
@@ -233,11 +256,13 @@
                     <li>Mentoring</li>
                 </ul>
             </section>
-        </div>
+        </main>
     </div>
     <footer>
-        <p>Pradeep Kumar - Data Analyst</p>
-        <p><a href="mailto:pradeepinfo.30@gmail.com">pradeepinfo.30@gmail.com</a> | <a href="https://www.linkedin.com/in/pradeep-kumar-1722b6123/">LinkedIn</a> | <a href="https://devpkr1.github.io/my-creds/">Portfolio</a></p>
+        <p>Place: Hapur, Uttar Pradesh</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-kumar-1722b6123/" target="_blank">Pradeep Kumar</a></p>
+        <p>Blog: <a href="https://devpkr1.github.io/my-creds/" target="_blank">Portfolio</a></p>
+        <p>I hereby declare that the information given above is true to the best of my knowledge.</p>
     </footer>
 </body>
 </html>
